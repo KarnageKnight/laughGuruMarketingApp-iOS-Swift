@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
+
     @IBOutlet weak var menuButton:UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -42,10 +43,13 @@ class NewsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
 
     
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -60,13 +64,28 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 3
+        return 7
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
-
+        cell.contentView.backgroundColor = UIColor.clearColor()
+        
+        cell.contentView.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        
+        cell.contentView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        
+        cell.contentView.layer.shadowOpacity = 0.8
+        
+        cell.contentView.layer.shadowRadius = 2
+        
+        cell.contentView.layer.cornerRadius = 20
+        
+        cell.contentView.layer.masksToBounds = true
+        if cell==0{
+            
+        }
         return cell
     }
     

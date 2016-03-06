@@ -17,6 +17,8 @@ class MenuController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,7 +26,6 @@ class MenuController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet weak var cell1: UIView!
 
     
     // MARK: - Table view data source
