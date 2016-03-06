@@ -24,7 +24,7 @@ class NewsTableViewController: UITableViewController {
             
         }
         
-        var nav = self.navigationController?.navigationBar
+        let nav = self.navigationController?.navigationBar
         // 2
         //nav?.barStyle = UIBarStyle.Black
         //nav?.tintColor = UIColor.yellowColor()
