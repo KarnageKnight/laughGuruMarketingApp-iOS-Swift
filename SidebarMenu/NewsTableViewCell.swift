@@ -9,7 +9,7 @@
 import UIKit
 
 class NewsTableViewCell: UITableViewCell {
-    @IBOutlet weak var headingLabel: UILabel!
+
 
 
     override func awakeFromNib() {

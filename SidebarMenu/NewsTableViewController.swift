@@ -25,7 +25,7 @@ class NewsTableViewController: UITableViewController {
             
         }
         
-        let nav = self.navigationController?.navigationBar
+        //let nav = self.navigationController?.navigationBar
         // 2
         //nav?.barStyle = UIBarStyle.Black
         //nav?.tintColor = UIColor.yellowColor()
@@ -83,8 +83,37 @@ class NewsTableViewController: UITableViewController {
         cell.contentView.layer.cornerRadius = 20
         
         cell.contentView.layer.masksToBounds = true
-        if cell==0{
+        let headingLabel = (cell.contentView.viewWithTag(101)) as! UILabel
+        let detailLabel = (cell.contentView.viewWithTag(102)) as! UILabel
+        
+        if indexPath.row==0{
+            headingLabel.text="Background"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
             
+        }else if indexPath.row==1{
+
+            headingLabel.text="What is LaughGuru?"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==2{
+
+            headingLabel.text="Research"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==3{
+
+            headingLabel.text="Associations"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==4{
+
+            headingLabel.text="Content Demo"
+            detailLabel.text=""
+        }else if indexPath.row==5{
+
+            headingLabel.text="Content Details"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==6{
+
+            headingLabel.text="Testimonials"
+            detailLabel.text=""
         }
         return cell
     }
@@ -128,7 +157,7 @@ class NewsTableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.

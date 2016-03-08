@@ -72,7 +72,29 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9JP-Xk-cu7">
                                             <rect key="frame" x="8" y="8" width="584" height="226.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h7-FO-uya">
+                                                    <rect key="frame" x="8" y="8" width="576" height="39"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1W-2u-dr6">
+                                                    <rect key="frame" x="8" y="55" width="568" height="87"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="A1W-2u-dr6" firstAttribute="leading" secondItem="9JP-Xk-cu7" secondAttribute="leading" constant="10" id="Nb9-1y-xGb"/>
+                                                <constraint firstItem="A1W-2u-dr6" firstAttribute="top" secondItem="0h7-FO-uya" secondAttribute="bottom" constant="8" id="PvM-Ya-D9x"/>
+                                                <constraint firstItem="0h7-FO-uya" firstAttribute="leading" secondItem="9JP-Xk-cu7" secondAttribute="leading" constant="10" id="pzq-nM-jWC"/>
+                                                <constraint firstItem="0h7-FO-uya" firstAttribute="top" secondItem="9JP-Xk-cu7" secondAttribute="top" constant="8" id="rvC-2y-G3w"/>
+                                                <constraint firstAttribute="trailing" secondItem="A1W-2u-dr6" secondAttribute="trailing" constant="10" id="tvR-aQ-GBz"/>
+                                                <constraint firstItem="0h7-FO-uya" firstAttribute="centerX" secondItem="9JP-Xk-cu7" secondAttribute="centerX" id="vhj-Wh-Awu"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" red="0.93711142015706805" green="0.93711142015706805" blue="0.93711142015706805" alpha="1" colorSpace="calibratedRGB"/>
