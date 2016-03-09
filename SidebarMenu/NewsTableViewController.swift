@@ -9,6 +9,7 @@
 import UIKit
 
 class NewsTableViewController: UITableViewController {
+
     @IBOutlet weak var menuButton:UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -23,15 +24,32 @@ class NewsTableViewController: UITableViewController {
             
             
         }
+        
+        //let nav = self.navigationController?.navigationBar
+        // 2
+        //nav?.barStyle = UIBarStyle.Black
+        //nav?.tintColor = UIColor.yellowColor()
+        // 3
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        // 4
+        let image = UIImage(named: "logo")
+        imageView.image = image
+        // 5
+        navigationItem.titleView = imageView
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
     }
 
     
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -46,34 +64,57 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 3
+        return 7
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
-
-        // Configure the cell...
-        if indexPath.row == 0 {
-            cell.postImageView.image = UIImage(named: "watchkit-intro")
-            cell.postTitleLabel.text = "WatchKit Introduction: Building a Simple Guess Game"
-            cell.authorLabel.text = "Simon Ng"
-            cell.authorImageView.image = UIImage(named: "author")
-
-        } else if indexPath.row == 1 {
-            cell.postImageView.image = UIImage(named: "custom-segue-featured-1024")
-            cell.postTitleLabel.text = "Building a Chat App in Swift Using Multipeer Connectivity Framework"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
+        cell.contentView.backgroundColor = UIColor.clearColor()
+        
+        cell.contentView.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        
+        cell.contentView.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        
+        cell.contentView.layer.shadowOpacity = 0.8
+        
+        cell.contentView.layer.shadowRadius = 2
+        
+        cell.contentView.layer.cornerRadius = 20
+        
+        cell.contentView.layer.masksToBounds = true
+        let headingLabel = (cell.contentView.viewWithTag(101)) as! UILabel
+        let detailLabel = (cell.contentView.viewWithTag(102)) as! UILabel
+        
+        if indexPath.row==0{
+            headingLabel.text="Background"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
             
-        } else {
-            cell.postImageView.image = UIImage(named: "webkit-featured")
-            cell.postTitleLabel.text = "A Beginner’s Guide to Animated Custom Segues in iOS 8"
-            cell.authorLabel.text = "Gabriel Theodoropoulos"
-            cell.authorImageView.image = UIImage(named: "appcoda-300")
-            
+        }else if indexPath.row==1{
+
+            headingLabel.text="What is LaughGuru?"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==2{
+
+            headingLabel.text="Research"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==3{
+
+            headingLabel.text="Associations"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==4{
+
+            headingLabel.text="Content Demo"
+            detailLabel.text=""
+        }else if indexPath.row==5{
+
+            headingLabel.text="Content Details"
+            detailLabel.text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa."
+        }else if indexPath.row==6{
+
+            headingLabel.text="Testimonials"
+            detailLabel.text=""
         }
-
         return cell
     }
     
@@ -116,7 +157,7 @@ class NewsTableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.

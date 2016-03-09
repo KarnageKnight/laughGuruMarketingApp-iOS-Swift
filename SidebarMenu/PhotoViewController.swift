@@ -19,6 +19,13 @@ class PhotoViewController: UIViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        // 4
+        let image = UIImage(named: "logo")
+        imageView.image = image
+        // 5
+        navigationItem.titleView = imageView
         // Do any additional setup after loading the view.
     }
 
