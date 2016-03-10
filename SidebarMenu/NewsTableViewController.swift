@@ -118,6 +118,17 @@ class NewsTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row==3{
+            self.performSegueWithIdentifier("toAssociations", sender: self)
+        }else if indexPath.row==4{
+            self.performSegueWithIdentifier("toContentDemo", sender: self)
+        }else if indexPath.row==5{
+            self.performSegueWithIdentifier("toContentDetails", sender: self)
+        }else if indexPath.row==6{
+            self.performSegueWithIdentifier("toTestimonials", sender: self)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
