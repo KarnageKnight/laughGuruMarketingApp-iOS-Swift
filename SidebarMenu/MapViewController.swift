@@ -14,11 +14,11 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
            //hamburger menu reveal/hide
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = "revealToggle:"
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+       // if self.revealViewController() != nil {
+         //   menuButton.target = self.revealViewController()
+           // menuButton.action = "revealToggle:"
+           // self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        //}
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
         imageView.contentMode = .ScaleAspectFit
         // 4
