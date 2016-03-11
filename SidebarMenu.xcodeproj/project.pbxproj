@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332CCAEB1C9268DB00A63E0B /* associationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CCAEA1C9268DB00A63E0B /* associationsController.swift */; };
 		336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336054701C89FDA9006FB6DD /* SWRevealViewController.m */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		332CCAEA1C9268DB00A63E0B /* associationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = associationsController.swift; sourceTree = "<group>"; };
 		3360546E1C89FDA9006FB6DD /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
 		3360546F1C89FDA9006FB6DD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		336054701C89FDA9006FB6DD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */,
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 				F4702A171A7F351C00E30A3C /* MenuController.swift */,
+				332CCAEA1C9268DB00A63E0B /* associationsController.swift */,
 				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
 				F491E74B1A7F4C630026528E /* NewsTableViewCell.swift */,
 				F491E7521A7F7DF20026528E /* MapViewController.swift */,
@@ -252,6 +255,7 @@
 				336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
+				332CCAEB1C9268DB00A63E0B /* associationsController.swift in Sources */,
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,

@@ -123,11 +123,11 @@ class NewsTableViewController: UITableViewController {
             self.performSegueWithIdentifier("toAssociations", sender: self)
         }else if indexPath.row==4{
             self.performSegueWithIdentifier("toContentDemo", sender: self)
-        }else if indexPath.row==5{
+        }/*else if indexPath.row==5{
             self.performSegueWithIdentifier("toContentDetails", sender: self)
         }else if indexPath.row==6{
             self.performSegueWithIdentifier("toTestimonials", sender: self)
-        }
+        }*/
     }
 
     /*
