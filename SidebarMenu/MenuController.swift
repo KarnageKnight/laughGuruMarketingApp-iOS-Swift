@@ -2,9 +2,10 @@
 //  MenuController.swift
 //  SidebarMenu
 //
-//  Created by Simon Ng on 2/2/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
+//  Created by KarnageKnight on 11/03/16.
+//  Copyright © 2016 KarnageKnight. All rights reserved.
 //
+
 
 import UIKit
 
