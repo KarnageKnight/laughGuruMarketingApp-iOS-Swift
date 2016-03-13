@@ -18,6 +18,8 @@ import UIKit
 
 class associationsController: UIViewController {
     
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
@@ -27,6 +29,16 @@ class associationsController: UIViewController {
         imageView.image = image
         // 5
         navigationItem.titleView = imageView
+        
+        print(self.revealViewController())
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = "revealToggle:"
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            
+        }
+
         // Do any additional setup after loading the view.
     }
     
