@@ -3,21 +3,17 @@
 //  SidebarMenu
 //
 //  Created by KarnageKnight on 11/03/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Copyright © 2016 KarnageKnight. All rights reserved.
 //
 
-//
-//  MapViewController.swift
-//  SidebarMenu
-//
-//  Created by Simon Ng on 2/2/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
-//
 
 import UIKit
 
 class associationsController: UIViewController {
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBOutlet weak var menuButton: UIBarButtonItem!
 
     override func viewDidLoad() {
@@ -30,14 +26,14 @@ class associationsController: UIViewController {
         // 5
         navigationItem.titleView = imageView
         
-        print(self.revealViewController())
+       /* print(self.revealViewController())
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+
             
-            
-        }
+        }*/
 
         // Do any additional setup after loading the view.
     }

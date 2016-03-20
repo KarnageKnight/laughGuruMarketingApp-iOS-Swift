@@ -2,19 +2,88 @@
 //  NewsTableViewController.swift
 //  SidebarMenu
 //
-//  Created by Simon Ng on 2/2/15.
-//  Copyright (c) 2015 AppCoda. All rights reserved.
+//  Created by KarnageKnight on 11/03/16.
+//  Copyright © 2016 KarnageKnight. All rights reserved.
 //
 
 import UIKit
 
 class NewsTableViewController: UITableViewController {
 
+    @IBOutlet weak var backgroundUI: UIView!
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    @IBOutlet weak var WhatUI: UIView!
+    @IBOutlet weak var ReasearchUI: UIView!
+    @IBOutlet weak var associationsUI: UIView!
+    @IBOutlet weak var CDemoUI: UIView!
+    @IBOutlet weak var CDetailsUI: UIView!
+    @IBOutlet weak var TestimonialsUI: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        backgroundUI.layer.cornerRadius=9
+      //  homeUI.backgroundColor = UIColor.clearColor()
         
+        backgroundUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        backgroundUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        backgroundUI.layer.shadowOpacity = 0.8
+        
+        backgroundUI.layer.shadowRadius = 4
+        
+        WhatUI.layer.cornerRadius=9
+        
+        WhatUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        WhatUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        WhatUI.layer.shadowOpacity = 0.8
+        
+        WhatUI.layer.shadowRadius = 4
+        
+        ReasearchUI.layer.cornerRadius=9
+
+        ReasearchUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        ReasearchUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        ReasearchUI.layer.shadowOpacity = 0.8
+        
+        ReasearchUI.layer.shadowRadius = 4
+        
+        associationsUI.layer.cornerRadius=9
+        
+        associationsUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        associationsUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        associationsUI.layer.shadowOpacity = 0.8
+        
+        associationsUI.layer.shadowRadius = 4
+        CDemoUI.layer.cornerRadius=9
+        
+        CDemoUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        CDemoUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        CDemoUI.layer.shadowOpacity = 0.8
+        
+        CDemoUI.layer.shadowRadius = 4
+        
+        CDetailsUI.layer.cornerRadius=9
+        
+        CDetailsUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        CDetailsUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        CDetailsUI.layer.shadowOpacity = 0.8
+        
+        CDetailsUI.layer.shadowRadius = 4
+        
+        TestimonialsUI.layer.cornerRadius=9
+        
+        TestimonialsUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        TestimonialsUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        TestimonialsUI.layer.shadowOpacity = 0.8
+        
+        TestimonialsUI.layer.shadowRadius = 4
+      //  cell.contentView.layer.cornerRadius = 20
         //hamburger menu reveal/hide
         
         if self.revealViewController() != nil {
@@ -66,7 +135,7 @@ class NewsTableViewController: UITableViewController {
         // Return the number of rows in the section.
         return 7
     }
-
+/*
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! NewsTableViewCell
@@ -129,7 +198,7 @@ class NewsTableViewController: UITableViewController {
             self.performSegueWithIdentifier("toTestimonials", sender: self)
         }
     }
-
+*/
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

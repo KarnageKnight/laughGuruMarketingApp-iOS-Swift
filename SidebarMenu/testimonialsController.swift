@@ -1,16 +1,18 @@
 //
-//  associationsController.swift
+//  testimonialsController.swift
 //  SidebarMenu
 //
 //  Created by KarnageKnight on 11/03/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
-//
+//  Copyright © 2016 KarnageKnight. All rights reserved.//
 
 
 import UIKit
 
 class testimonialsController: UIViewController {
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
