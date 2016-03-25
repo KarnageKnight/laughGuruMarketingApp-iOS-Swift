@@ -11,10 +11,19 @@ import UIKit
 class NewsTableViewController: UITableViewController {
 
     @IBOutlet weak var backgroundUI: UIView!
+    @IBOutlet weak var backgroundLabel: UILabel!
     @IBOutlet weak var menuButton:UIBarButtonItem!
+    @IBOutlet weak var laughGuruLabel: UILabel!
     @IBOutlet weak var WhatUI: UIView!
+    @IBOutlet weak var teamUI: UIView!
+    @IBOutlet weak var contentDemoLabel: UILabel!
     @IBOutlet weak var ReasearchUI: UIView!
+    @IBOutlet weak var associationsLabel: UILabel!
+    @IBOutlet weak var researchLabel: UILabel!
+    @IBOutlet weak var contentDetailsLabel: UILabel!
     @IBOutlet weak var associationsUI: UIView!
+    @IBOutlet weak var testimonialsLabel: UILabel!
+    @IBOutlet weak var teamLabel: UILabel!
     @IBOutlet weak var CDemoUI: UIView!
     @IBOutlet weak var CDetailsUI: UIView!
     @IBOutlet weak var TestimonialsUI: UIView!
@@ -83,6 +92,15 @@ class NewsTableViewController: UITableViewController {
         TestimonialsUI.layer.shadowOpacity = 0.8
         
         TestimonialsUI.layer.shadowRadius = 4
+        
+        teamUI.layer.cornerRadius=9
+        
+        teamUI.layer.shadowColor = UIColor.darkGrayColor().CGColor
+        teamUI.layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        
+        teamUI.layer.shadowOpacity = 0.8
+        
+        teamUI.layer.shadowRadius = 4
       //  cell.contentView.layer.cornerRadius = 20
         //hamburger menu reveal/hide
         
@@ -91,7 +109,55 @@ class NewsTableViewController: UITableViewController {
             menuButton.action = "revealToggle:"
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
             
-            
+            let db = SQLiteDB.sharedInstance()
+            var result = db.query("select * from Main WHERE ID='1'", parameters: nil)
+            for row in result
+            {
+                
+                backgroundLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='2'", parameters: nil)
+            for row in result
+            {
+                
+                laughGuruLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='3'", parameters: nil)
+            for row in result
+            {
+                
+                teamLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='4'", parameters: nil)
+            for row in result
+            {
+                
+                researchLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='5'", parameters: nil)
+            for row in result
+            {
+                
+                associationsLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='6'", parameters: nil)
+            for row in result
+            {
+                
+                contentDemoLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='7'", parameters: nil)
+            for row in result
+            {
+                
+                contentDetailsLabel.text=row["Text"] as! String
+            }
+            result = db.query("select * from Main WHERE ID='8'", parameters: nil)
+            for row in result
+            {
+                
+                testimonialsLabel.text=row["Text"] as! String
+            }
         }
         
         //let nav = self.navigationController?.navigationBar
@@ -133,8 +199,7 @@ class NewsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
-        return 7
-    }
+        return 8    }
 /*
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

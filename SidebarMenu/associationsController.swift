@@ -37,12 +37,7 @@ class associationsController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let db = SQLiteDB.sharedInstance()
-        var result = db.query("select * from BoardFactor", parameters: nil)
-        for row in result
-        {
-            print(row["Board"] as! String)
-        }
+        
     }
     
     override func didReceiveMemoryWarning() {
