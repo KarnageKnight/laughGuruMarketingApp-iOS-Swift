@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33018D101CA5265600C82C4F /* LaughGuruMarketing in Resources */ = {isa = PBXBuildFile; fileRef = 33018D0E1CA5265600C82C4F /* LaughGuruMarketing */; };
+		33018D111CA5265600C82C4F /* LaughGuruMarketing.db in Resources */ = {isa = PBXBuildFile; fileRef = 33018D0F1CA5265600C82C4F /* LaughGuruMarketing.db */; };
+		33018D141CA5278700C82C4F /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33018D121CA5278700C82C4F /* SQLiteDB.swift */; };
+		33018D151CA5278700C82C4F /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33018D131CA5278700C82C4F /* String-Extras.swift */; };
 		332CCAEB1C9268DB00A63E0B /* associationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CCAEA1C9268DB00A63E0B /* associationsController.swift */; };
 		335239541C92708F0021C3B6 /* testimonialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335239531C92708F0021C3B6 /* testimonialsController.swift */; };
 		336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336054701C89FDA9006FB6DD /* SWRevealViewController.m */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33018D0E1CA5265600C82C4F /* LaughGuruMarketing */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaughGuruMarketing; sourceTree = "<group>"; };
+		33018D0F1CA5265600C82C4F /* LaughGuruMarketing.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaughGuruMarketing.db; sourceTree = "<group>"; };
+		33018D121CA5278700C82C4F /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = ../SQLiteDB.swift; sourceTree = "<group>"; };
+		33018D131CA5278700C82C4F /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "../String-Extras.swift"; sourceTree = "<group>"; };
 		332CCAEA1C9268DB00A63E0B /* associationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = associationsController.swift; sourceTree = "<group>"; };
 		335239531C92708F0021C3B6 /* testimonialsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testimonialsController.swift; sourceTree = "<group>"; };
 		3360546E1C89FDA9006FB6DD /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -81,6 +89,8 @@
 		3360546D1C89FD7C006FB6DD /* SWRevealViewController */ = {
 			isa = PBXGroup;
 			children = (
+				33018D121CA5278700C82C4F /* SQLiteDB.swift */,
+				33018D131CA5278700C82C4F /* String-Extras.swift */,
 				3360546F1C89FDA9006FB6DD /* SWRevealViewController.h */,
 				336054701C89FDA9006FB6DD /* SWRevealViewController.m */,
 				3360546E1C89FDA9006FB6DD /* SidebarMenu-Bridging-Header.h */,
@@ -92,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				33B6BBB21C9C5D4F00A7BCEA /* libsqlite3.0.tbd */,
+				33018D0E1CA5265600C82C4F /* LaughGuruMarketing */,
+				33018D0F1CA5265600C82C4F /* LaughGuruMarketing.db */,
 				F4702A151A7F342F00E30A3C /* MapKit.framework */,
 				F47029F21A7F27DB00E30A3C /* SidebarMenu */,
 				F4702A081A7F27DC00E30A3C /* SidebarMenuTests */,
@@ -239,6 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33018D111CA5265600C82C4F /* LaughGuruMarketing.db in Resources */,
+				33018D101CA5265600C82C4F /* LaughGuruMarketing in Resources */,
 				F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */,
 				F4702A001A7F27DC00E30A3C /* LaunchScreen.xib in Resources */,
 				F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */,
@@ -266,8 +280,10 @@
 				F491E74C1A7F4C630026528E /* NewsTableViewCell.swift in Sources */,
 				335239541C92708F0021C3B6 /* testimonialsController.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
+				33018D141CA5278700C82C4F /* SQLiteDB.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
+				33018D151CA5278700C82C4F /* String-Extras.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

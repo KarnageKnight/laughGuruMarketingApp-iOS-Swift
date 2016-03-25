@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -279,7 +279,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9159440445" green="0.9159440445" blue="0.9159440445" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="mCq-mT-il2" kind="presentation" id="PoJ-pw-sd0"/>
+                                            <segue destination="mCq-mT-il2" kind="presentation" modalTransitionStyle="flipHorizontal" id="PoJ-pw-sd0"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="243" id="b1I-Jk-Rq8" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
@@ -333,7 +333,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9159440445" green="0.9159440445" blue="0.9159440445" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="rrl-W7-yGY" kind="presentation" id="bYv-ch-8uC"/>
+                                            <segue destination="rrl-W7-yGY" kind="presentation" modalTransitionStyle="flipHorizontal" id="bYv-ch-8uC"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="243" id="rSj-zQ-t7e" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
@@ -387,7 +387,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9159440445" green="0.9159440445" blue="0.9159440445" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="sE8-Cy-yWP" kind="presentation" id="UYb-eP-jzn"/>
+                                            <segue destination="sE8-Cy-yWP" kind="presentation" modalTransitionStyle="flipHorizontal" id="UYb-eP-jzn"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="243" id="051-qq-GAg" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
@@ -441,7 +441,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9159440445" green="0.9159440445" blue="0.9159440445" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <segue destination="bQc-S5-vbN" kind="presentation" id="x2o-x9-O2l"/>
+                                            <segue destination="bQc-S5-vbN" kind="presentation" modalTransitionStyle="flipHorizontal" id="x2o-x9-O2l"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -677,57 +677,15 @@
                                             <segue destination="dXH-rC-dKS" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSeguePushController" id="RTq-kD-qmo"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dcS-Um-JRf">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wro-nw-gzB">
                                         <rect key="frame" x="0.0" y="175" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dcS-Um-JRf" id="tfV-qz-vFM">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wro-nw-gzB" id="LXE-vR-ejF">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="9KR-aa-RgE">
-                                                    <rect key="frame" x="18" y="4" width="35" height="35"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Team" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-Bb-kny">
-                                                    <rect key="frame" x="8" y="6" width="44" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="9KR-aa-RgE"/>
-                                                </mask>
-                                            </variation>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94085192680358887" green="0.94903725385665894" blue="0.95307987928390503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fyu-8k-lj0">
-                                        <rect key="frame" x="0.0" y="219" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyu-8k-lj0" id="T53-k8-WHP">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Research" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it0-69-JpN">
-                                                    <rect key="frame" x="8" y="6" width="72" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94085192680358887" green="0.94903725385665894" blue="0.95307987928390503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="aoD-Dl-44h">
-                                        <rect key="frame" x="0.0" y="263" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aoD-Dl-44h" id="msF-42-5Vd">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is LaughGuru?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHg-kz-yYi">
-                                                    <rect key="frame" x="8" y="6" width="161" height="31"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pricing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPa-sV-1PT">
+                                                    <rect key="frame" x="8" y="6" width="56" height="31"/>
                                                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -737,7 +695,7 @@
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="2" id="S8L-LO-aRB">
-                                        <rect key="frame" x="0.0" y="307" width="600" height="2"/>
+                                        <rect key="frame" x="0.0" y="219" width="600" height="2"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S8L-LO-aRB" id="a5p-oN-g9n">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="1.5"/>
@@ -774,7 +732,7 @@
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3Gi-Zy-Xvw">
-                                        <rect key="frame" x="0.0" y="309" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="221" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gi-Zy-Xvw" id="5W2-Yz-QeU">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -790,11 +748,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="rrl-W7-yGY" kind="show" id="VVe-2K-lj2"/>
+                                            <segue destination="rrl-W7-yGY" kind="presentation" modalTransitionStyle="flipHorizontal" id="VVe-2K-lj2"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="P7d-p0-sR2">
-                                        <rect key="frame" x="0.0" y="353" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="265" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P7d-p0-sR2" id="dgh-7d-npH">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -810,28 +768,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="sE8-Cy-yWP" kind="show" id="5uT-VW-Kn3"/>
+                                            <segue destination="sE8-Cy-yWP" kind="presentation" modalTransitionStyle="flipHorizontal" id="5uT-VW-Kn3"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Wro-nw-gzB">
-                                        <rect key="frame" x="0.0" y="397" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wro-nw-gzB" id="LXE-vR-ejF">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pricing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPa-sV-1PT">
-                                                    <rect key="frame" x="8" y="6" width="56" height="31"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="22"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="EuN-fU-Qb2">
-                                        <rect key="frame" x="0.0" y="441" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="309" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EuN-fU-Qb2" id="hy6-fb-Hyk">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -847,11 +788,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="mCq-mT-il2" kind="show" id="eVk-xD-iaq"/>
+                                            <segue destination="mCq-mT-il2" kind="presentation" modalTransitionStyle="flipHorizontal" id="eVk-xD-iaq"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kve-ga-oYb">
-                                        <rect key="frame" x="0.0" y="485" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="353" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kve-ga-oYb" id="Pf8-uO-BbP">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -867,7 +808,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.94085192679999996" green="0.94903725390000004" blue="0.95307987930000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="bQc-S5-vbN" kind="show" id="clJ-hy-YzU"/>
+                                            <segue destination="bQc-S5-vbN" kind="presentation" modalTransitionStyle="flipHorizontal" id="clJ-hy-YzU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -957,15 +898,14 @@
     </scenes>
     <resources>
         <image name="logo" width="300" height="145"/>
-        <image name="map" width="1024" height="1024"/>
         <image name="menu" width="22" height="22"/>
         <image name="news" width="1024" height="1024"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PoJ-pw-sd0"/>
+        <segue reference="clJ-hy-YzU"/>
         <segue reference="RTq-kD-qmo"/>
-        <segue reference="UYb-eP-jzn"/>
-        <segue reference="x2o-x9-O2l"/>
-        <segue reference="bYv-ch-8uC"/>
+        <segue reference="5uT-VW-Kn3"/>
+        <segue reference="VVe-2K-lj2"/>
+        <segue reference="eVk-xD-iaq"/>
     </inferredMetricsTieBreakers>
 </document>
