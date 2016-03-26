@@ -101,6 +101,10 @@ class NewsTableViewController: UITableViewController {
         teamUI.layer.shadowOpacity = 0.8
         
         teamUI.layer.shadowRadius = 4
+        
+        researchLabel.numberOfLines = 0;
+        researchLabel.sizeToFit()
+        
       //  cell.contentView.layer.cornerRadius = 20
         //hamburger menu reveal/hide
         
@@ -114,49 +118,49 @@ class NewsTableViewController: UITableViewController {
             for row in result
             {
                 
-                backgroundLabel.text=row["Text"] as! String
+                backgroundLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='2'", parameters: nil)
             for row in result
             {
                 
-                laughGuruLabel.text=row["Text"] as! String
+                laughGuruLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='3'", parameters: nil)
             for row in result
             {
                 
-                teamLabel.text=row["Text"] as! String
+                teamLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='4'", parameters: nil)
             for row in result
             {
                 
-                researchLabel.text=row["Text"] as! String
+                researchLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='5'", parameters: nil)
             for row in result
             {
                 
-                associationsLabel.text=row["Text"] as! String
+                associationsLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='6'", parameters: nil)
             for row in result
             {
                 
-                contentDemoLabel.text=row["Text"] as! String
+                contentDemoLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='7'", parameters: nil)
             for row in result
             {
                 
-                contentDetailsLabel.text=row["Text"] as! String
+                contentDetailsLabel.text=(row["Text"] as! String)
             }
             result = db.query("select * from Main WHERE ID='8'", parameters: nil)
             for row in result
             {
                 
-                testimonialsLabel.text=row["Text"] as! String
+                testimonialsLabel.text=(row["Text"] as! String)
             }
         }
         
