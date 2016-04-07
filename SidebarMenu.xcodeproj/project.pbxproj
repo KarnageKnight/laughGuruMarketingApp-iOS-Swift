@@ -11,6 +11,7 @@
 		33018D111CA5265600C82C4F /* LaughGuruMarketing.db in Resources */ = {isa = PBXBuildFile; fileRef = 33018D0F1CA5265600C82C4F /* LaughGuruMarketing.db */; };
 		33018D141CA5278700C82C4F /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33018D121CA5278700C82C4F /* SQLiteDB.swift */; };
 		33018D151CA5278700C82C4F /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33018D131CA5278700C82C4F /* String-Extras.swift */; };
+		3307E01C1CB6B26500575DFE /* pricing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3307E01B1CB6B26500575DFE /* pricing.swift */; };
 		332CCAEB1C9268DB00A63E0B /* associationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332CCAEA1C9268DB00A63E0B /* associationsController.swift */; };
 		335239541C92708F0021C3B6 /* testimonialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335239531C92708F0021C3B6 /* testimonialsController.swift */; };
 		336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336054701C89FDA9006FB6DD /* SWRevealViewController.m */; };
@@ -43,6 +44,7 @@
 		33018D0F1CA5265600C82C4F /* LaughGuruMarketing.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = LaughGuruMarketing.db; sourceTree = "<group>"; };
 		33018D121CA5278700C82C4F /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = ../SQLiteDB.swift; sourceTree = "<group>"; };
 		33018D131CA5278700C82C4F /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "../String-Extras.swift"; sourceTree = "<group>"; };
+		3307E01B1CB6B26500575DFE /* pricing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pricing.swift; sourceTree = "<group>"; };
 		332CCAEA1C9268DB00A63E0B /* associationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = associationsController.swift; sourceTree = "<group>"; };
 		335239531C92708F0021C3B6 /* testimonialsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testimonialsController.swift; sourceTree = "<group>"; };
 		3360546E1C89FDA9006FB6DD /* SidebarMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SidebarMenu-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				F47029FE1A7F27DB00E30A3C /* LaunchScreen.xib */,
 				F47029F31A7F27DB00E30A3C /* Supporting Files */,
 				F4702A171A7F351C00E30A3C /* MenuController.swift */,
+				3307E01B1CB6B26500575DFE /* pricing.swift */,
 				335239531C92708F0021C3B6 /* testimonialsController.swift */,
 				332CCAEA1C9268DB00A63E0B /* associationsController.swift */,
 				F491E7491A7F4B300026528E /* NewsTableViewController.swift */,
@@ -281,6 +284,7 @@
 				335239541C92708F0021C3B6 /* testimonialsController.swift in Sources */,
 				F491E7531A7F7DF20026528E /* MapViewController.swift in Sources */,
 				33018D141CA5278700C82C4F /* SQLiteDB.swift in Sources */,
+				3307E01C1CB6B26500575DFE /* pricing.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
 				33018D151CA5278700C82C4F /* String-Extras.swift in Sources */,
