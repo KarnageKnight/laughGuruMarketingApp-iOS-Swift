@@ -16,6 +16,8 @@
 		335239541C92708F0021C3B6 /* testimonialsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335239531C92708F0021C3B6 /* testimonialsController.swift */; };
 		336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336054701C89FDA9006FB6DD /* SWRevealViewController.m */; };
 		33B6BBB31C9C5D4F00A7BCEA /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B6BBB21C9C5D4F00A7BCEA /* libsqlite3.0.tbd */; };
+		33F12C8F1CB82F6D00B194F1 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F12C8C1CB82F6D00B194F1 /* IGLDropDownItem.m */; };
+		33F12C901CB82F6D00B194F1 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F12C8E1CB82F6D00B194F1 /* IGLDropDownMenu.m */; };
 		F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47029F51A7F27DB00E30A3C /* AppDelegate.swift */; };
 		F47029FB1A7F27DB00E30A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47029F91A7F27DB00E30A3C /* Main.storyboard */; };
 		F47029FD1A7F27DB00E30A3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47029FC1A7F27DB00E30A3C /* Images.xcassets */; };
@@ -51,6 +53,10 @@
 		3360546F1C89FDA9006FB6DD /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		336054701C89FDA9006FB6DD /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		33B6BBB21C9C5D4F00A7BCEA /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		33F12C8B1CB82F6D00B194F1 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropdown/IGLDropDownItem.h; sourceTree = "<group>"; };
+		33F12C8C1CB82F6D00B194F1 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropdown/IGLDropDownItem.m; sourceTree = "<group>"; };
+		33F12C8D1CB82F6D00B194F1 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropdown/IGLDropDownMenu.h; sourceTree = "<group>"; };
+		33F12C8E1CB82F6D00B194F1 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropdown/IGLDropDownMenu.m; sourceTree = "<group>"; };
 		F47029F01A7F27DB00E30A3C /* SidebarMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SidebarMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47029F41A7F27DB00E30A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F47029F51A7F27DB00E30A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +100,10 @@
 				33018D121CA5278700C82C4F /* SQLiteDB.swift */,
 				33018D131CA5278700C82C4F /* String-Extras.swift */,
 				3360546F1C89FDA9006FB6DD /* SWRevealViewController.h */,
+				33F12C8B1CB82F6D00B194F1 /* IGLDropDownItem.h */,
+				33F12C8C1CB82F6D00B194F1 /* IGLDropDownItem.m */,
+				33F12C8D1CB82F6D00B194F1 /* IGLDropDownMenu.h */,
+				33F12C8E1CB82F6D00B194F1 /* IGLDropDownMenu.m */,
 				336054701C89FDA9006FB6DD /* SWRevealViewController.m */,
 				3360546E1C89FDA9006FB6DD /* SidebarMenu-Bridging-Header.h */,
 			);
@@ -276,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F12C8F1CB82F6D00B194F1 /* IGLDropDownItem.m in Sources */,
 				336054711C89FDA9006FB6DD /* SWRevealViewController.m in Sources */,
 				F4702A181A7F351C00E30A3C /* MenuController.swift in Sources */,
 				F47029F61A7F27DB00E30A3C /* AppDelegate.swift in Sources */,
@@ -287,6 +298,7 @@
 				3307E01C1CB6B26500575DFE /* pricing.swift in Sources */,
 				F491E74A1A7F4B300026528E /* NewsTableViewController.swift in Sources */,
 				F491E7551A7F7E010026528E /* PhotoViewController.swift in Sources */,
+				33F12C901CB82F6D00B194F1 /* IGLDropDownMenu.m in Sources */,
 				33018D151CA5278700C82C4F /* String-Extras.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
