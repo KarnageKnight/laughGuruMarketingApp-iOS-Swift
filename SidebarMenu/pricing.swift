@@ -54,7 +54,7 @@ class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate
         {
             Board.append(row["Board"] as! String)
         }
-       let resultGrade = db.query("select Grade from StandardFactor", parameters: nil)
+       let resultGrade = db.query("select CAST(Grade as varchar(10)) from StandardFactor", parameters: nil)
         
         for row in resultGrade
         {
