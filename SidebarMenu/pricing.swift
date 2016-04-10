@@ -20,7 +20,10 @@ class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate
     @IBOutlet weak var myPicker: UIPickerView!
     @IBOutlet weak var resultView: UIView!
     @IBOutlet weak var filterView: UIView!
-    let pickerData = [["Mozzarella","Gorgonzola","Provolone","Brie","Maytag Blue","Sharp Cheddar","Monterrey Jack","Stilton","Gouda","Goat Cheese", "Asiago"],["1","2","3","4","5","6","7","8"],["1 Month","3 Months","6 Months","12 Months"]]
+    var Board:[String] = []
+    var Grade:[String] = []
+    var Duration:[String] = []
+    var pickerData:[[String]]=[]
     @IBAction func backButton(sender: AnyObject) {
     
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -44,7 +47,27 @@ class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate
         filterView.layer.shadowRadius = 4
         myPicker.dataSource = self
         myPicker.delegate = self
+       
+        let db = SQLiteDB.sharedInstance()
+        let resultBoard = db.query("select Board from BoardFactor", parameters: nil)
+        for row in resultBoard
+        {
+            Board.append(row["Board"] as! String)
+        }
+       let resultGrade = db.query("select Grade from StandardFactor", parameters: nil)
         
+        for row in resultGrade
+        {
+            print(row["Grade"])
+            Grade.append("\(row["Grade"])")
+        }
+
+        let resultDuration = db.query("select Duration from DurationFactor", parameters: nil)
+        for row in resultDuration
+        {
+            Duration.append(row["Duration"] as! String)
+        }
+        pickerData = [Board,Grade,Duration]
     }
     //MARK: - Delegates and data sources
     //MARK: Data Sources
@@ -60,7 +83,7 @@ class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate
         case 2:
             return pickerData[2].count
         default:
-            return pickerData[1].count
+            return 1
         }
     }
     //MARK: Delegates
