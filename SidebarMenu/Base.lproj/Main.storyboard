@@ -737,7 +737,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6C-n0-sYe">
-                                                    <rect key="frame" x="8" y="8" width="584" height="36"/>
+                                                    <rect key="frame" x="8" y="8" width="584" height="284"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
                                             </subviews>
@@ -758,8 +758,33 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Enz-th-sU0">
-                                                    <rect key="frame" x="8" y="8" width="584" height="36"/>
+                                                    <rect key="frame" x="8" y="8" width="584" height="284"/>
+                                                    <subviews>
+                                                        <pickerView tag="1" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iz6-jN-VZD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="584" height="284"/>
+                                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </pickerView>
+                                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhk-Rx-jj9">
+                                                            <rect key="frame" x="535" y="0.0" width="37" height="30"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                            <state key="normal" title="Done"/>
+                                                            <state key="focused">
+                                                                <color key="titleShadowColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="pickerDone:" destination="PDz-l9-0GW" eventType="touchUpInside" id="7LQ-eC-NI4"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Iz6-jN-VZD" secondAttribute="bottom" id="AuQ-im-Tvh"/>
+                                                        <constraint firstItem="Iz6-jN-VZD" firstAttribute="top" secondItem="Enz-th-sU0" secondAttribute="top" id="AvJ-ev-FbJ"/>
+                                                        <constraint firstItem="mhk-Rx-jj9" firstAttribute="trailing" secondItem="Iz6-jN-VZD" secondAttribute="trailing" constant="-10" id="Cyq-Sf-LOU"/>
+                                                        <constraint firstItem="Iz6-jN-VZD" firstAttribute="leading" secondItem="Enz-th-sU0" secondAttribute="leading" id="Geu-xx-UYb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Iz6-jN-VZD" secondAttribute="trailing" id="g7l-ry-kP6"/>
+                                                        <constraint firstItem="mhk-Rx-jj9" firstAttribute="top" secondItem="Iz6-jN-VZD" secondAttribute="top" id="wcY-Q3-lTA"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -780,7 +805,9 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="doneButton" destination="mhk-Rx-jj9" id="od6-Ml-MVO"/>
                         <outlet property="filterView" destination="z6C-n0-sYe" id="7Po-Mk-hU8"/>
+                        <outlet property="myPicker" destination="Iz6-jN-VZD" id="kLd-4Y-ExF"/>
                         <outlet property="resultView" destination="Enz-th-sU0" id="ZwI-ZL-fPW"/>
                     </connections>
                 </tableViewController>
