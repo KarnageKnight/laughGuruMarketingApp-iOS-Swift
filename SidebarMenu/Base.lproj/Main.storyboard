@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -31,7 +31,7 @@
         <!--Testimonials Controller-->
         <scene sceneID="cuS-UD-GJj">
             <objects>
-                <viewController id="bQc-S5-vbN" customClass="testimonialsController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bQc-S5-vbN" customClass="testimonialsController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XKg-xY-gDB"/>
                         <viewControllerLayoutGuide type="bottom" id="ARM-U0-WvM"/>
@@ -67,7 +67,7 @@
         <!--News Table View Controller-->
         <scene sceneID="3qE-8D-r7Z">
             <objects>
-                <tableViewController id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="RaP-X2-i0v" customClass="NewsTableViewController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="243" sectionHeaderHeight="22" sectionFooterHeight="22" id="Idv-M6-Zjl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
                         <sections>
                             <tableViewSection id="CVt-3s-P6C">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="350" id="m7N-Q8-5h6" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="350" id="m7N-Q8-5h6" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="m7N-Q8-5h6" id="uxv-3b-FYp">
@@ -136,7 +136,7 @@
                                             <constraint firstAttribute="bottom" secondItem="mdF-Pu-Ch4" secondAttribute="bottom" constant="10" id="02Y-ym-4MQ"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="350" id="Fsy-od-rVh" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="350" id="Fsy-od-rVh" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="414" width="600" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Fsy-od-rVh" id="6eg-Dc-SMI">
@@ -196,7 +196,7 @@
                                             <constraint firstAttribute="bottom" secondItem="2dZ-Ms-bD4" secondAttribute="bottom" constant="10" id="q2R-XY-Fd9"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="gsO-2g-aWB" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="gsO-2g-aWB" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="764" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gsO-2g-aWB" id="4W6-x9-XsC">
@@ -263,7 +263,7 @@
                                             </mask>
                                         </variation>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="Otv-nt-YCG" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="Otv-nt-YCG" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1164" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Otv-nt-YCG" id="x0i-RW-2Wf">
@@ -324,7 +324,7 @@
                                             </mask>
                                         </variation>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="Mf2-5U-8dA" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="Mf2-5U-8dA" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1564" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mf2-5U-8dA" id="4Qq-3o-fT7">
@@ -387,7 +387,7 @@
                                             <segue destination="mCq-mT-il2" kind="presentation" modalTransitionStyle="flipHorizontal" id="PoJ-pw-sd0"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="243" id="b1I-Jk-Rq8" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="243" id="b1I-Jk-Rq8" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1964" width="600" height="243"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b1I-Jk-Rq8" id="nxb-IX-Jkg">
@@ -441,7 +441,7 @@
                                             <segue destination="rrl-W7-yGY" kind="presentation" modalTransitionStyle="flipHorizontal" id="bYv-ch-8uC"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="rSj-zQ-t7e" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="rSj-zQ-t7e" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2207" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rSj-zQ-t7e" id="pgA-HX-ftI">
@@ -504,7 +504,7 @@
                                             <segue destination="sE8-Cy-yWP" kind="presentation" modalTransitionStyle="flipHorizontal" id="UYb-eP-jzn"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="051-qq-GAg" customClass="NewsTableViewCell" customModule="SidebarMenu" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="400" id="051-qq-GAg" customClass="NewsTableViewCell" customModule="LaughGuru" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="2607" width="600" height="400"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="051-qq-GAg" id="Inu-xy-Ot9">
@@ -613,7 +613,7 @@
         <!--Associations Controller-->
         <scene sceneID="oZ4-nd-F1F">
             <objects>
-                <viewController id="mCq-mT-il2" customClass="associationsController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mCq-mT-il2" customClass="associationsController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fi5-aA-hTR"/>
                         <viewControllerLayoutGuide type="bottom" id="x2p-xb-XTo"/>
@@ -660,7 +660,7 @@
         <!--Map View Controller-->
         <scene sceneID="ADt-xU-rGi">
             <objects>
-                <viewController id="rrl-W7-yGY" customClass="MapViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rrl-W7-yGY" customClass="MapViewController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r57-K0-1Xn"/>
                         <viewControllerLayoutGuide type="bottom" id="dGf-e9-FUb"/>
@@ -703,7 +703,7 @@
         <!--Pricing-->
         <scene sceneID="R2Y-U4-3qP">
             <objects>
-                <tableViewController id="PDz-l9-0GW" customClass="pricing" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="PDz-l9-0GW" customClass="pricing" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Iae-iL-mdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,7 +818,7 @@
         <!--Menu Controller-->
         <scene sceneID="WvI-gM-KFV">
             <objects>
-                <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="c8U-hf-vWv" customClass="MenuController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="haP-s8-5Sh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1077,7 +1077,7 @@
                     </tableView>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eHO-uu-C6D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="gGL-Yg-g6J">
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" id="gGL-Yg-g6J">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </mapView>
@@ -1105,7 +1105,7 @@
         <!--Photo View Controller-->
         <scene sceneID="yCp-Wv-509">
             <objects>
-                <viewController id="sE8-Cy-yWP" customClass="PhotoViewController" customModule="SidebarMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sE8-Cy-yWP" customClass="PhotoViewController" customModule="LaughGuru" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IPC-hk-0Qs"/>
                         <viewControllerLayoutGuide type="bottom" id="VBi-dM-ohh"/>
