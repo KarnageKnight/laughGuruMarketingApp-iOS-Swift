@@ -3,7 +3,7 @@
 //  SidebarMenu
 //
 //  Created by KarnageKnight on 07/04/16.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Copyright © 2016 KarnageKnight. All rights reserved.
 //
 
 import Foundation
@@ -12,6 +12,13 @@ import UIKit
 class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate{
     @IBOutlet weak var doneButton: UIButton!
     var boardWeight:Double=0
+    @IBOutlet weak var boardLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var gradeLabel: UILabel!
+    @IBAction func chooseButton(sender: AnyObject) {
+        myPicker.hidden=false
+        doneButton.hidden=false
+    }
     var gradeWeight:Double=0
     var durationWeight:Double = 0
     @IBAction func pickerDone(sender: AnyObject) {
@@ -37,6 +44,9 @@ class pricing:UITableViewController,UIPickerViewDataSource, UIPickerViewDelegate
         }
         myPicker.hidden=true
         doneButton.hidden=true
+        boardLabel.text=boardChosen
+        gradeLabel.text=gradeChosen
+        durationLabel.text=durationChosen
         
     }
    let db = SQLiteDB.sharedInstance()
